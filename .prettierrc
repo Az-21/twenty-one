@@ -1,6 +1,6 @@
 {
 	"useTabs": false,
-	"tabWidth": 4,
+	"tabWidth": 2,
 	"svelteStrictMode": true,
 	"singleQuote": true,
 	"trailingComma": "none",

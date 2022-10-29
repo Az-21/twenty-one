@@ -12,7 +12,12 @@ const config = {
 	],
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		alias: {
+			"@static": "src/static/",
+			"@routes": "src/routes/",
+			"@components": "src/components/",
+		}
 	}
 };
 
