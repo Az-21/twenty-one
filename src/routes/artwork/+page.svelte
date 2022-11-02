@@ -1,9 +1,19 @@
 <script lang="ts">
+  import ArtCard from './ArtCard.svelte';
   import Navbar from '@components/Navbar.svelte';
-  import { kSpacing } from '@static/Resource.svelte';
+  import { ArtMetadata } from './ArtData.svelte';
+  import { width } from '@static/Resource.svelte';
 </script>
 
 <Navbar />
-<div class="{kSpacing} grid grid-cols-2 gap-4">
-  <div class="bg-secondaryContainer w-full h-96 rounded-xl"></div>
+<div class="{width} grid lg:grid-cols-2 grid-cols-1 gap-4">
+  {#each ArtMetadata as Artwork}
+    <ArtCard
+      title="{Artwork.title}"
+      subtitle="{Artwork.subtitle}"
+      thumbnaiLink="{Artwork.thumbnailLink}"
+      redditLink="{Artwork.redditLink}"
+      mirrorLink="{Artwork.mirrorLink}"
+    />
+  {/each}
 </div>
