@@ -1,9 +1,9 @@
 <script lang="ts">
-  import { kSpacing } from '@static/Resource.svelte';
+  import { width } from '@static/Resource.svelte';
 </script>
 
-<div class="border-b-2">
-  <div class="{kSpacing} place-content-between flex place-items-baseline">
+<div class="shadow-md mb-8">
+  <div class="{width} place-content-between flex place-items-baseline">
     <!-- Left -->
     <div class="flex gap-12 place-items-baseline">
       <p class="text-4xl font-bold">Twenty One</p>
