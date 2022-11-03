@@ -11,9 +11,11 @@
     <ArtCard
       title="{Artwork.title}"
       subtitle="{Artwork.subtitle}"
-      thumbnaiLink="{Artwork.thumbnailLink}"
+      variants="{Artwork.variants}"
+      resolution="{Artwork.resolution}"
       redditLink="{Artwork.redditLink}"
       mirrorLink="{Artwork.mirrorLink}"
+      thumbnaiLink="{Artwork.thumbnailLink}"
     />
   {/each}
 </div>

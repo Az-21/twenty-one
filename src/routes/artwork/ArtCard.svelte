@@ -3,9 +3,11 @@
 
   export let title: string;
   export let subtitle: string;
-  export let thumbnaiLink: string;
+  export let variants: number;
+  export let resolution: number;
   export let redditLink: string;
   export let mirrorLink: string;
+  export let thumbnaiLink: string;
 </script>
 
 <div class="border-2 border-outline bg-secondaryContainer w-full rounded-xl">
@@ -18,15 +20,10 @@
       <p class="text-4xl font-baskerville">{title}</p>
       <p class="text-lg">{subtitle}</p>
     </div>
-    <div class="font-jetbrainsmono">
-      <div class="flex items-center">
-        <i class="fa-solid fa-seedling pr-3"></i>
-        <p>8 Variants</p>
-      </div>
-      <div class="flex items-center">
-        <i class="fa-solid fa-file-invoice pr-3 pl-1"></i>
-        <p>4K UHD</p>
-      </div>
+    <div class="flex">
+      <p>{variants} Variants</p>
+      <p class="mx-2 font-jetbrainsmono">~~</p>
+      <p>{resolution}K Resolution</p>
     </div>
   </div>
 
