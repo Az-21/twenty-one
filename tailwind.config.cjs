@@ -2,6 +2,13 @@ const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
+		extend: {
+			fontFamily: {
+				baskerville: "'Libre Baskerville', serif",
+				jetbrainsmono: "'JetBrains Mono', monospace",
+				hyperlegible: "'Atkinson Hyperlegible', sans-serif",
+			}
+		},
 		colors: {
 			"primary": "#65DBB3",
 			"onPrimary": "#003829",

@@ -15,10 +15,10 @@
   <!-- Info -->
   <div class="md:flex md:place-content-between mt-4 px-4">
     <div>
-      <p class="text-4xl font-bold">{title}</p>
+      <p class="text-4xl font-baskerville">{title}</p>
       <p class="text-lg">{subtitle}</p>
     </div>
-    <div>
+    <div class="font-jetbrainsmono">
       <div class="flex items-center">
         <i class="fa-solid fa-seedling pr-3"></i>
         <p>8 Variants</p>
